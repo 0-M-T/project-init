@@ -1,5 +1,7 @@
 # project-init 🚀
 
+![project-init banner](banner.jpg)
+
 > **Autonomous AI-agent workflow skill** for initializing production-ready software projects with interactive discovery interviews, GitHub prior-art search, automated design systems, and code graph mapping.
 
 Compatible with **Claude Code**, **Google Antigravity**, **Cursor**, **Codex**, and **OpenCode**.
