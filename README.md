@@ -4,11 +4,12 @@
 
 > **Autonomous AI-agent workflow skill** for initializing production-ready software projects with interactive discovery interviews, GitHub prior-art search, automated design systems, and code graph mapping.
 
+Available languages: **[English](SKILL.en.md)** | **[Français](SKILL.fr.md)**  
 Compatible with **Claude Code**, **Google Antigravity**, **Cursor**, **Codex**, and **OpenCode**.
 
 ---
 
-## What It Does
+## What It Does / Fonctionnalités
 
 When triggered, your AI agent automatically executes a battle-tested 5-phase onboarding protocol:
 
@@ -29,16 +30,16 @@ When triggered, your AI agent automatically executes a battle-tested 5-phase onb
 
 ---
 
-## ⚡ 1-Prompt Setup for Your AI Agent
+## ⚡ 1-Prompt Setup for Your AI Agent (English)
 
-Paste this exact prompt into your AI assistant session (**Claude Code**, **Antigravity**, or **Cursor**):
+Paste this prompt into your AI assistant session (**Claude Code**, **Antigravity**, or **Cursor**):
 
 ```text
 Install the 'project-init' skill into my dev environment by following these steps:
 
 1. Detect where my agent skills/rules are stored (e.g., ~/.claude/skills/, ~/.gemini/antigravity/skills/, or .cursor/rules/).
 2. Create a folder named 'project-init/' in that directory.
-3. Fetch or copy the SKILL.md from https://github.com/0-M-T/project-init into that folder.
+3. Fetch or copy the SKILL.en.md (renamed to SKILL.md) from https://github.com/0-M-T/project-init into that folder.
 4. Add a rule to my global instructions (CLAUDE.md or AGENTS.md):
    "Whenever creating or scaffolding a new project, strictly follow the 'project-init' skill starting with Phase 0 (multiple-choice discovery questions)."
 5. Confirm completion in 2 concise lines.
@@ -46,20 +47,36 @@ Install the 'project-init' skill into my dev environment by following these step
 
 ---
 
-## 🛠️ Manual Installation
+## ⚡ Prompt d'installation en 1 clic (Français)
 
-### Claude Code
+Copiez et collez ce prompt dans la session de votre agent IA :
+
+```text
+Installe le skill 'project-init' dans mon environnement de développement en suivant ces instructions :
+
+1. Détecte où sont stockés mes skills IA (ex: ~/.claude/skills/, ~/.gemini/antigravity/skills/ ou .cursor/rules/).
+2. Crée le dossier 'project-init/' à cet endroit.
+3. Télécharge ou copie le fichier SKILL.fr.md (renommé en SKILL.md) depuis https://github.com/0-M-T/project-init dans ce dossier.
+4. Ajoute une règle globale dans mes instructions d'agent (CLAUDE.md ou AGENTS.md) :
+   "À chaque création d'un nouveau projet, applique obligatoirement le skill 'project-init' en commençant par la Phase 0 (questions à choix multiples pour cadrer le projet)."
+5. Confirme-moi l'installation en 2 lignes.
+```
+
+---
+
+## 🛠️ Manual Installation / Installation manuelle
+
+### Option A — English
 ```bash
 git clone https://github.com/0-M-T/project-init.git ~/.claude/skills/project-init
+cp ~/.claude/skills/project-init/SKILL.en.md ~/.claude/skills/project-init/SKILL.md
 ```
 
-### Google Antigravity
+### Option B — Français
 ```bash
-git clone https://github.com/0-M-T/project-init.git ~/.gemini/antigravity/skills/project-init
+git clone https://github.com/0-M-T/project-init.git ~/.claude/skills/project-init
+cp ~/.claude/skills/project-init/SKILL.fr.md ~/.claude/skills/project-init/SKILL.md
 ```
-
-### Cursor / Codex / OpenCode
-Copy [`SKILL.md`](SKILL.md) directly into your `.cursor/rules/project-init.mdc` or root `AGENTS.md`.
 
 ---
 
@@ -70,9 +87,7 @@ Simply run:
 /project-init
 ```
 Or tell your agent:
-> *"Create a new project for my CLI backup utility..."*
-
-Your assistant will immediately trigger the interactive discovery phase.
+> *"Create a new project for my CLI backup utility..."* / *"Crée un nouveau projet pour mon outil de..."*
 
 ---
 
